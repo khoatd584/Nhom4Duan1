@@ -45,9 +45,7 @@
             </div>
             <div class="products">
                     
-                <div class="product">
-                    
-                </div>
+                
                 <?php
 			foreach ($spnew as $sp) {
 				extract($sp);

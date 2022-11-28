@@ -31,7 +31,6 @@
                         $hinh = "không có hình";
                     }
                     echo '<tr>
-                            <td><input type="checkbox" name=""></td>
                             <td>' . $id . '</td>
                             <td>' . $name . '</td>
                             <td>' . $price . '</td>
