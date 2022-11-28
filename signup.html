@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="../CSS/signin.css">
+    <link rel="stylesheet" href="../CSS/signup.css">
 </head>
 
 <body>
     <div class="account">
         <a href="#">Help</a>
-        <a href="../HTML/signup.html">Join Us</a>
-        <a href="../HTML/signin.html">Sign In</a>
+        <a href="./signup.html">Join Us</a>
+        <a href="./signin.html">Sign In</a>
     </div>
     <header>
         <div class="logo">
@@ -269,11 +269,17 @@
             <img src="../IMG/logo.png" alt="">
         </div>
         <div class="title">
-            <h3>YOUR ACCOUNT FOR EVERYTHING NIKE</h3>
+            <h3>BECOME A NIKE MEMBER</h3>
+            <p>Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</p>
         </div>
-        <div class="signin">
+        <div class="signup">
 
-            <form action="" method="POST" class="form" id="form-2">
+            <form action="" method="POST" class="form" id="form-1">
+                <div class="form-group">
+
+                    <input id="fullname" name="fullname" type="text" placeholder="Username" class="form-control">
+                    <span class="form-message"></span>
+                </div>
 
                 <div class="form-group">
                     <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
@@ -285,11 +291,16 @@
                     <span class="form-message"></span>
                 </div>
 
-                <p>By logging in, you agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+                <div class="form-group">
+                    <input id="password_confirmation" name="password_confirmation" placeholder="Confirm Password" type="password" class="form-control">
+                    <span class="form-message"></span>
+                </div>
 
-                <input type="submit" class="form-submit" value="SIGN IN">
+                <p>By creating an account, you agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
 
-                <p>Not a Member? <a href="../HTML/signup.html">Join Us</a></p>
+                <input type="submit" class="form-submit" value="Join Us">
+
+                <p>Already a Member?<a href="./signin.html">Sign In</a></p>
             </form>
         </div>
     </main>
@@ -337,17 +348,23 @@
             </div>
         </div>
     </footer>
+    </div>
     <script src="../JS/validation.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Mong muốn của chúng ta
             Validator({
-                form: '#form-2',
+                form: '#form-1',
                 formGroupSelector: '.form-group',
                 errorSelector: '.form-message',
                 rules: [
+                    Validator.isRequired('#fullname', 'Please enter a valid username'),
                     Validator.isEmail('#email'),
                     Validator.minLength('#password', 6),
+                    Validator.isRequired('#password_confirmation'),
+                    Validator.isConfirmed('#password_confirmation', function() {
+                        return document.querySelector('#form-1 #password').value;
+                    }, 'Password is incorrect')
                 ],
                 onSubmit: function(data) {
                     // Call API

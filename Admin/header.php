@@ -16,7 +16,8 @@
     <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
     <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
     <!-- Custom CSS -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="">
 </head>
 
@@ -85,25 +86,25 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php" aria-expanded="false">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="category.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=listdm" aria-expanded="false">
                                 <i class="fa fa-server" aria-hidden="true"></i>
                                 <span class="hide-menu">Category</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=listsp" aria-expanded="false">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                                 <span class="hide-menu">Product</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="customers.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=listkh" aria-expanded="false">
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 <span class="hide-menu">Customers</span>
                             </a>
@@ -121,97 +122,3 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-
-        <div class="page-wrapper">
-
-            <div class="container-fluid">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
-                            <h3 class="box-title">Total Visit</h3>
-                            <ul class="list-inline two-part d-flex align-items-center mb-0">
-                                <li>
-                                    <div id="sparklinedash"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
-                                    </div>
-                                </li>
-                                <li class="ms-auto"><span class="counter text-success">659</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
-                            <h3 class="box-title">Total Page Views</h3>
-                            <ul class="list-inline two-part d-flex align-items-center mb-0">
-                                <li>
-                                    <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
-                                    </div>
-                                </li>
-                                <li class="ms-auto"><span class="counter text-purple">869</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
-                            <h3 class="box-title">Unique Visitor</h3>
-                            <ul class="list-inline two-part d-flex align-items-center mb-0">
-                                <li>
-                                    <div id="sparklinedash3"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
-                                    </div>
-                                </li>
-                                <li class="ms-auto"><span class="counter text-info">911</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- PRODUCTS YEARLY SALES -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Products Yearly Sales</h3>
-                            <div class="d-md-flex">
-                                <ul class="list-inline d-flex ms-auto">
-                                    <li class="ps-3">
-                                        <h5><i class="fa fa-circle me-1 text-info"></i>Mac</h5>
-                                    </li>
-                                    <li class="ps-3">
-                                        <h5><i class="fa fa-circle me-1 text-inverse"></i>Windows</h5>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="ct-visits" style="height: 405px;">
-                                <div class="chartist-tooltip" style="top: -17px; left: -12px;"><span class="chartist-tooltip-value">6</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-    </div>
-
-    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app-style-switcher.js"></script>
-    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <!--Wave Effects -->
-    <script src="js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="js/custom.js"></script>
-    <!--This page JavaScript -->
-    <!--chartis chart-->
-    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
-    <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="js/pages/dashboards/dashboard1.js"></script>
-</body>
-
-</html>

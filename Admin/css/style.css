@@ -5,6 +5,117 @@ File: scss
 */
 /*******************************/
 /*******************************/
+.open-button {
+            background-color: #54c45e;
+            color: white;
+            padding: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            top: 9%;
+            right: 2%;
+            width: 100px;
+        }
+        
+        .form-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+            overflow: auto;
+        }
+        /* Form */
+        
+        .btn_cancel {
+            border: none;
+            outline: none;
+            background-color: white;
+        }
+        
+        .form {
+            width: auto;
+            padding: 32px 24px;
+            text-align: left;
+            background: #fff;
+            border-radius: 2px;
+            margin: 24px;
+            align-self: center;
+            border: 0.5px solid #1dbfaf;
+        }
+        
+        input[type=text],
+        textarea,
+        select {
+            width: 100%;
+            padding: 15px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=file] {
+            width: 100%;
+            padding: 15px 20px;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit],
+        input[type=reset],
+        input[type=button] {
+            width: 50%;
+            background-color: #54c45e;
+            color: white;
+            padding: 15px 10px;
+            margin: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover,
+        input[type=reset]:hover,
+        input[type=button]:hover {
+            background-color: #272d40;
+            color: #54c45e;
+        }
+        
+        .form_product {
+            width: 50%;
+            margin: auto;
+            border-radius: 5px;
+            background-color: #f8f8f7;
+            padding: 20px;
+        }
+        
+        .action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        form {
+            --columns: 2;
+            --gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+            grid-gap: var(--gap);
+        }
+        
+        .control {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
 /*Theme Colors*/
 /*Topbar Colors*/

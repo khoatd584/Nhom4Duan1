@@ -5,24 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/shop.css">
+    <!-- <link rel="stylesheet" href="./CSS/cart.css">
+    <link rel="stylesheet" href="./CSS/product_single.css">
+    <link rel="stylesheet" href="./CSS/product.css">
+    <link rel="stylesheet" href="./CSS/signin.css">
+    <link rel="stylesheet" href="./CSS/signup.css"> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="../CSS/signup.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
     <div class="account">
         <a href="#">Help</a>
-        <a href="../HTML/signup.html">Join Us</a>
-        <a href="../HTML/signin.html">Sign In</a>
+        <a href="./signup.html">Join Us</a>
+        <a href="./signin.html">Sign In</a>
     </div>
     <header>
         <div class="logo">
-            <a href="../index.html"><img src="../IMG/logo.png" alt=""></a>
+            <a href="index.html"><img src="./IMG/logo.png" alt=""></a>
         </div>
         <ul class="menu">
-            <l i class="menu_item">
+            <li class="menu_item">
                 <a href="#" class="menu_link">Men</a>
                 <div class="menu_child">
                     <div class="menu_child-item">
@@ -76,7 +87,7 @@
                         </ul>
                     </div>
                 </div>
-            </l>
+            </li>
             <li class="menu_item">
                 <a href="#" class="menu_link">Women</a>
                 <div class="menu_child">
@@ -259,120 +270,8 @@
             <a href="#">
                 <ion-icon name="heart-outline"></ion-icon>
             </a>
-            <a href="#">
+            <a href="./cart.html">
                 <ion-icon name="bag-outline"></ion-icon>
             </a>
         </div>
     </header>
-    <main>
-        <div class="view_nike">
-            <img src="../IMG/logo.png" alt="">
-        </div>
-        <div class="title">
-            <h3>BECOME A NIKE MEMBER</h3>
-            <p>Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</p>
-        </div>
-        <div class="signup">
-
-            <form action="" method="POST" class="form" id="form-1">
-                <div class="form-group">
-
-                    <input id="fullname" name="fullname" type="text" placeholder="Username" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <input id="password" name="password" type="password" placeholder="Password" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <input id="password_confirmation" name="password_confirmation" placeholder="Confirm Password" type="password" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <p>By creating an account, you agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
-
-                <input type="submit" class="form-submit" value="Join Us">
-
-                <p>Already a Member?<a href="../HTML/signin.html">Sign In</a></p>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <div class="top_footer">
-            <div class="col col1">
-                <h4>FIND A STORE</h4>
-                <h4>BECOME A MEMBER</h4>
-                <h4>SIGN UP FOR EMAIL</h4>
-                <h4>SEND US FEEDBACK</h4>
-            </div>
-            <div class="col col2">
-                <h4>GET HELP</h4>
-                <span>Order Status</span>
-                <span>Delivery</span>
-                <span>Returns</span>
-                <span>Payment Options</span>
-                <span>Contact Us</span>
-            </div>
-            <div class="col col3">
-                <h4>ABOUT NIKE</h4>
-                <span>News</span>
-                <span>Careers</span>
-                <span>Inventors</span>
-                <span>Sustainability</span>
-            </div>
-            <div class="col4">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-            </div>
-        </div>
-        <div class="bot_footer">
-            <div class="left">
-                <ion-icon name="location-sharp"></ion-icon>
-                <span>Vietnam </span>
-                <p>© 2022 Nike, Inc. All Rights Reserved</p>
-            </div>
-            <div class="right">
-                <span>Guides</span>
-                <span>Terms of Sale</span>
-                <span>Terms of Use</span>
-                <span>Nike Privacy Policy</span>
-            </div>
-        </div>
-    </footer>
-    </div>
-    <script src="../JS/validation.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mong muốn của chúng ta
-            Validator({
-                form: '#form-1',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                    Validator.isRequired('#fullname', 'Please enter a valid username'),
-                    Validator.isEmail('#email'),
-                    Validator.minLength('#password', 6),
-                    Validator.isRequired('#password_confirmation'),
-                    Validator.isConfirmed('#password_confirmation', function() {
-                        return document.querySelector('#form-1 #password').value;
-                    }, 'Password is incorrect')
-                ],
-                onSubmit: function(data) {
-                    // Call API
-                    console.log(data);
-                }
-            });
-        });
-    </script>
-</body>
-
-</html>

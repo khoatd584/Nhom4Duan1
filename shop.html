@@ -5,29 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Shop</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link rel="stylesheet" href="./CSS/shop.css">
 </head>
 
 <body>
     <div class="account">
         <a href="#">Help</a>
-        <a href="./HTML/signup.html">Join Us</a>
-        <a href="./HTML/signin.html">Sign In</a>
+        <a href="#">Join Us</a>
+        <a href="./signin.html">Sign In</a>
     </div>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="./IMG/logo.png" alt=""></a>
+            <a href="../index.html"><img src="../IMG/logo.png" alt=""></a>
         </div>
         <ul class="menu">
-            <li class="menu_item">
+            <l i class="menu_item">
                 <a href="#" class="menu_link">Men</a>
                 <div class="menu_child">
                     <div class="menu_child-item">
@@ -81,7 +76,7 @@
                         </ul>
                     </div>
                 </div>
-            </li>
+            </l>
             <li class="menu_item">
                 <a href="#" class="menu_link">Women</a>
                 <div class="menu_child">
@@ -264,143 +259,139 @@
             <a href="#">
                 <ion-icon name="heart-outline"></ion-icon>
             </a>
-            <a href="./HTML/cart.html">
+            <a href="#">
                 <ion-icon name="bag-outline"></ion-icon>
             </a>
         </div>
     </header>
     <main>
-        <section class="banner">
-            <img src="./IMG/banner.jpg" alt="Nike">
-            <div class="infor_banner">
-                <p>Nike Pegasus Turbo Next Nature</p>
-                <h1>RUNNING TO THE FUTURE.</h1>
-                <p>Made from at least 50% recycled content by weight. Power your pursuit of progress in the Pegasus Turbo Next Nature</p>
-                <a href="./HTML/shop.html"><button>Shop</button></a>
-                <button>Watch <span><ion-icon name="play"></ion-icon></span></button>
+        <div class="sort">
+            <button>
+                <div class="sort_name">
+                    Hide Filter
+                </div>
+                <div class="sort_icon">
+                    <ion-icon name="options-outline"></ion-icon>
+                </div>
+            </button>
+            <button>
+                <div class="sort_name">
+                    Sort By
+                </div>
+                <div class="sort_icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </button>
+        </div>
+        <div class="shop">
+            <div class="list_sort">
+                <ul>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Jordan</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Skateboarding</a></li>
+                    <li><a href="#">Golf</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Athletics</a></li>
+                    <li><a href="#">Walking</a></li>
+                </ul>
             </div>
-        </section>
-        <h2>Featured</h2>
-        <section>
-            <div class="featured">
-                <div class="featured_left">
-                    <img src="./IMG/featured_1.webp" alt="">
-                    <div class="infor_featured">
-                        <h3>Nike (M): Make For Everything You Are</h3>
-                        <a href="./HTML/shop.html"><button>Shop</button></a>
+            <div class="products">
+                <a href="./product_single.html">
+                    <div class="product">
+                        <div class="product_img">
+                            <img src="../IMG/Collection/NikeCourt_Zoom_Vapor_Cage_4_Rafa.webp" alt="">
+                        </div>
+                        <div class="product_name">
+                            <h4>NikeCourt Zoom Cage 4 Rafa</h4>
+                        </div>
+                        <div class="product_price">
+                            <span>4,409,000<sup>đ</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_React_Vapor_NXT.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt React Vapor NXT</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>3,759,199<sup>đ</sup></span>
                     </div>
                 </div>
-                <div class="featured_right">
-                    <img src="./IMG/featured_2.webp" alt="">
-                    <div class="infor_featured">
-                        <h3>Supported, But Still You</h3>
-                        <a href="./HTML/shop.html"><button>Shop Alate</button></a>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_Air_Zoom_Vapor_Pro.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt Air Zoom Vapor Pro</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>3,519,000<sup>đ</sup></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_Vapor_Lite.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt Vapor Lite</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>2,349,000<sup>đ</sup></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_Zoom_Vapor_Cage_4_Rafa.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt Zoom Cage 4 Rafa</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>4,409,000<sup>đ</sup></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_React_Vapor_NXT.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt React Vapor NXT</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>3,759,199<sup>đ</sup></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_Air_Zoom_Vapor_Pro.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt Air Zoom Vapor Pro</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>3,519,000<sup>đ</sup></span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="../IMG/Collection/NikeCourt_Vapor_Lite.webp" alt="">
+                    </div>
+                    <div class="product_name">
+                        <h4>NikeCourt Vapor Lite</h4>
+                    </div>
+                    <div class="product_price">
+                        <span>2,349,000<sup>đ</sup></span>
                     </div>
                 </div>
             </div>
-        </section>
-        <h2>Newest Collection</h2>
-        <section class="shop">
-            <div class="product">
-                <div class="product_img">
-                    <img src="./IMG/Collection/NikeCourt_Zoom_Vapor_Cage_4_Rafa.webp" alt="">
-                </div>
-                <div class="product_name">
-                    <h4>NikeCourt Zoom Cage 4 Rafa</h4>
-                </div>
-                <div class="product_price">
-                    <span>4,409,000<sup>đ</sup></span>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <img src="./IMG/Collection/NikeCourt_React_Vapor_NXT.webp" alt="">
-                </div>
-                <div class="product_name">
-                    <h4>NikeCourt React Vapor NXT</h4>
-                </div>
-                <div class="product_price">
-                    <span>3,759,199<sup>đ</sup></span>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <img src="./IMG/Collection/NikeCourt_Air_Zoom_Vapor_Pro.webp" alt="">
-                </div>
-                <div class="product_name">
-                    <h4>NikeCourt Air Zoom Vapor Pro</h4>
-                </div>
-                <div class="product_price">
-                    <span>3,519,000<sup>đ</sup></span>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <img src="./IMG/Collection/NikeCourt_Vapor_Lite.webp" alt="">
-                </div>
-                <div class="product_name">
-                    <h4>NikeCourt Vapor Lite</h4>
-                </div>
-                <div class="product_price">
-                    <span>2,349,000<sup>đ</sup></span>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <img src="./IMG/Collection/NikeCourt_React_Vapor_NXT.webp" alt="">
-                </div>
-                <div class="product_name">
-                    <h4>NikeCourt React Vapor NXT</h4>
-                </div>
-                <div class="product_price">
-                    <span>3,759,199<sup>đ</sup></span>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <img src="./IMG/Collection/NikeCourt_Air_Zoom_Vapor_Pro.webp" alt="">
-                </div>
-                <div class="product_name">
-                    <h4>NikeCourt Air Zoom Vapor Pro</h4>
-                </div>
-                <div class="product_price">
-                    <span>3,519,000<sup>đ</sup></span>
-                </div>
-            </div>
-        </section>
-        <h2>Don't Miss</h2>
-        <section>
-            <div class="featured">
-                <div class="featured_left">
-                    <img src="./IMG/dontmiss_4.webp" alt="">
-                    <div class="infor_featured">
-                        <h3>Swoosh Fiber</h3>
-                        <a href="./HTML/shop.html"><button>Shop</button></a>
-                    </div>
-                </div>
-                <div class="featured_right">
-                    <img src="./IMG/dontmiss_3.webp" alt="">
-                    <div class="infor_featured">
-                        <h3>Nike Yoga: Go Beyond The Mat</h3>
-                        <a href="./HTML/shop.html"><button>Shop</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <h2>Just In</h2>
-        <section>
-            <div class="just_in">
-                <img src="./IMG/justin_1.webp" alt="">
-            </div>
-            <div class="anniversary">
-                <p>Nike Air Max FlyKnit Racer</p>
-                <h1>10TH ANNIVERSARY EDITION</h1>
-                <P>This is what happen when two icons collide. The Flyknit Racer's sock-like upper
-                    <ion-icon name="remove-outline"></ion-icon> rooted in performent
-                    <ion-icon name="remove-outline"></ion-icon> meets the modern Max Air unit.</P>
-                <a href="./HTML/shop.html"><button>Shop</button></a>
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="top_footer">
@@ -446,8 +437,6 @@
             </div>
         </div>
     </footer>
-    <!-- Slick -->
-    <script src="./JS/app.js"></script>
 </body>
 
 </html>

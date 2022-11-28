@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Single</title>
-    <link rel="stylesheet" href="../CSS/product_single.css">
+    <title>Sign In</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../CSS/signin.css">
 </head>
 
 <body>
     <div class="account">
         <a href="#">Help</a>
-        <a href="../HTML/signup.html">Join Us</a>
-        <a href="../HTML/signin.html">Sign In</a>
+        <a href="./signup.html">Join Us</a>
+        <a href="./signin.html">Sign In</a>
     </div>
     <header>
         <div class="logo">
             <a href="../index.html"><img src="../IMG/logo.png" alt=""></a>
         </div>
         <ul class="menu">
-            <li class="menu_item">
+            <l i class="menu_item">
                 <a href="#" class="menu_link">Men</a>
                 <div class="menu_child">
                     <div class="menu_child-item">
@@ -74,7 +76,7 @@
                         </ul>
                     </div>
                 </div>
-            </li>
+            </l>
             <li class="menu_item">
                 <a href="#" class="menu_link">Women</a>
                 <div class="menu_child">
@@ -262,57 +264,35 @@
             </a>
         </div>
     </header>
-
     <main>
-        <div class="infor_left">
-            <img src="../IMG/Collection/NikeCourt_Zoom_Vapor_Cage_4_Rafa.webp" alt="">
+        <div class="view_nike">
+            <img src="../IMG/logo.png" alt="">
         </div>
-        <div class="infor_right">
-            <h1>NikeCourt Zoom Cage 4 Rafa</h1>
-            <h3>Tên loại</h3>
-            <span>4,409,000<sup>đ</sup></span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatum dolorum rem a laudantium corporis natus ipsa molestiae labore vitae voluptas, ullam iusto modi incidunt, sapiente deleniti ipsam at sequi?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatum dolorum rem a laudantium corporis natus ipsa molestiae labore vitae voluptas, ullam iusto modi incidunt, sapiente deleniti ipsam at sequi?</p>
-            <form action="" method="post">
-                <legend>Select Size</legend>
-                <div class="sizes">
-                    <input type="radio" name="size" id="EU 40">
-                    <label for="EU 40">EU 40</label>
+        <div class="title">
+            <h3>YOUR ACCOUNT FOR EVERYTHING NIKE</h3>
+        </div>
+        <div class="signin">
 
-                    <input type="radio" name="size" id="EU 40.5">
-                    <label for="EU 40.5">EU 40.5</label>
+            <form action="" method="POST" class="form" id="form-2">
 
-                    <input type="radio" name="size" id="EU 41">
-                    <label for="EU 41">EU 41</label>
-
-                    <input type="radio" name="size" id="EU 42">
-                    <label for="EU 42">EU 42</label>
-
-                    <input type="radio" name="size" id="EU 43">
-                    <label for="EU 43">EU 43</label>
-
-                    <input type="radio" name="size" id="EU 44">
-                    <label for="EU 44">EU 44</label>
-
-                    <input type="radio" name="size" id="EU 44.5">
-                    <label for="EU 44.5">EU 44.5</label>
-
-                    <input type="radio" name="size" id="EU 45">
-                    <label for="EU 45">EU 45</label>
-
-                    <input type="radio" name="size" id="EU 45.5">
-                    <label for="EU 45.5">EU 45.5</label>
-
-                    <input type="radio" name="size" id="EU 46">
-                    <label for="EU 46">EU 46</label>
-
-                    <input type="submit" name="" value="Add to Cart">
-
+                <div class="form-group">
+                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                    <span class="form-message"></span>
                 </div>
+
+                <div class="form-group">
+                    <input id="password" name="password" type="password" placeholder="Password" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <p>By logging in, you agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+
+                <input type="submit" class="form-submit" value="SIGN IN">
+
+                <p>Not a Member? <a href="./signup.html">Join Us</a></p>
             </form>
         </div>
     </main>
-
     <footer>
         <div class="top_footer">
             <div class="col col1">
@@ -357,6 +337,25 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/validation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mong muốn của chúng ta
+            Validator({
+                form: '#form-2',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password', 6),
+                ],
+                onSubmit: function(data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
