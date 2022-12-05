@@ -104,14 +104,14 @@
                     <img src="./IMG/dontmiss_4.webp" alt="">
                     <div class="infor_featured">
                         <h3>Swoosh Fiber</h3>
-                        <a href="./shop.html"><button>Shop</button></a>
+                        <a href="./index.php?act=shop"><button>Shop</button></a>
                     </div>
                 </div>
                 <div class="featured_right">
                     <img src="./IMG/dontmiss_3.webp" alt="">
                     <div class="infor_featured">
                         <h3>Nike Yoga: Go Beyond The Mat</h3>
-                        <a href="./shop.html"><button>Shop</button></a>
+                        <a href="./index.php?act=shop"><button>Shop</button></a>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,42 @@
                 <P>This is what happen when two icons collide. The Flyknit Racer's sock-like upper
                     <ion-icon name="remove-outline"></ion-icon> rooted in performent
                     <ion-icon name="remove-outline"></ion-icon> meets the modern Max Air unit.</P>
-                <a href="./shop.html"><button>Shop</button></a>
+                <a href="./index.php?act=shop"><button>Shop</button></a>
             </div>
         </section>
     </main>
+    <script>
+        $(document).ready(function() {
+    $('.shop').slick({
+
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+        prevArrow: `<button type='button' class='slick-prev arrow'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
+        nextArrow: `<button type='button' class='slick-next arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`
+    });
+});
+    </script>

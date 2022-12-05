@@ -1,6 +1,6 @@
 /* Setting */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
 *,
 *:before,
 *:after {
@@ -30,7 +30,7 @@ select {
     outline: none;
     font-size: 13px;
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 input {
@@ -152,11 +152,46 @@ h2 {
 }
 
 .search {
-    font-size: 1.5rem;
-    color: #111111;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-gap: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.search_box {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+}
+
+.search_input {
+    padding: 1rem;
+    border: 0;
+    border-radius: inherit;
+    flex-grow: 1;
+    font-size: 0.75rem;
+    background-color: #f5f5f5;
+    border: 4px;
+}
+
+.search_btn {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #e2e2e2;
+    border-radius: inherit;
+    font-size: 1rem;
+    width: max-content;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a ion-icon {

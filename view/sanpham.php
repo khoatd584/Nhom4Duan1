@@ -22,11 +22,10 @@
         <div class="shop">
             <div class="list_sort">
                 <ul>
-                    
                 <?php
 				foreach ($dsdm as $dm) {
 					extract($dm);
-					$linkdm = "./index.php?act=shop&iddm=".$id;
+					$linkdm = "./index.php?act=sanpham&iddm=".$id;
 					echo '<li><a href="'.$linkdm.'">
 						'.$name.'
 					</a></li>';
@@ -38,7 +37,7 @@
                     
                 
                 <?php
-			foreach ($dssp as $sp) {
+			foreach ($spnew as $sp) {
 				extract($sp);
 				$linksp = "./index.php?act=sanphamct&idsp=".$id;
 				$img = $img_path.$img;
