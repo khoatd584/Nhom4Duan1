@@ -8,20 +8,6 @@
     <title>Home</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/shop.css">
-    <!-- <link rel="stylesheet" href="./CSS/cart.css"> -->
-<<<<<<< HEAD
-    <!-- <link rel="stylesheet" href="./CSS/product_single.css">
-    <link rel="stylesheet" href="./CSS/product.css">
-    <link rel="stylesheet" href="./CSS/signin.css">
-    <link rel="stylesheet" href="./CSS/signup.css"> -->
-    <!-- <link rel="stylesheet" href="./CSS/signup.css">
-    <link rel="stylesheet" href="./CSS/signin.css"> -->
-=======
-    <!-- <link rel="stylesheet" href="./CSS/product_single.css"> -->
-    <!-- <link rel="stylesheet" href="./CSS/product.css"> -->
-    <!-- <link rel="stylesheet" href="./CSS/signin.css"> -->
-    <!-- <link rel="stylesheet" href="./CSS/signup.css"> -->
->>>>>>> 8fe40c639ea7b4308574a7fda0aa91b7ee741cb8
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -297,19 +283,14 @@
         </ul>
         <div class="search">
 
-<<<<<<< HEAD
+
             <form action="./index.php?act=shop" method="POST" class="search_box">
                 <input type="text" class="search_input" name="kyw" placeholder="Search...">
                 <button class="search_btn">
                     <ion-icon name="search-outline"></ion-icon>
                 </button>
             </form>
-=======
-            <div class="search_box">
-                <input type="text" class="search_input" name="search" placeholder="Search...">
-                <button class="search_btn"><ion-icon name="search-outline"></ion-icon></button>
-            </div>
->>>>>>> 8fe40c639ea7b4308574a7fda0aa91b7ee741cb8
+
 
             <div class="">
                 <a href="./cart.html">
