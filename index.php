@@ -19,6 +19,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $kyw = $_POST['kyw'];
             } else {
                 $kyw = "";
+<<<<<<< HEAD
             }
             if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
                 $iddm = $_GET['iddm'];
@@ -114,6 +115,29 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'viewcart':
             include "./view/viewcart.php";
             break;
+=======
+            }
+            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
+                $iddm = $_GET['iddm'];
+            } else {
+                $iddm = 0;
+            }
+            $dssp = loadall_sanpham($kyw,$iddm);
+            $tendm = load_ten_dm($iddm);
+            include "./view/shop.php";
+            break;
+        case 'sanphamct':
+            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
+                $id = $_GET['idsp'];
+                $onesp = loadone_sanpham($id);
+                include "./view/sanphamct.php";
+            } else {
+                include "./view/home.php";
+            }
+            break;
+        
+        
+>>>>>>> 8fe40c639ea7b4308574a7fda0aa91b7ee741cb8
         default:
             include "./view/home.php";
             break;

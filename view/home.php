@@ -86,8 +86,12 @@
         </section>
     </main>
     <script>
+<<<<<<< HEAD
         // Slick slider
 $(document).ready(function() {
+=======
+        $(document).ready(function() {
+>>>>>>> 8fe40c639ea7b4308574a7fda0aa91b7ee741cb8
     $('.shop').slick({
 
         infinite: false,
@@ -120,5 +124,8 @@ $(document).ready(function() {
         nextArrow: `<button type='button' class='slick-next arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`
     });
 });
+<<<<<<< HEAD
 // End Slider
+=======
+>>>>>>> 8fe40c639ea7b4308574a7fda0aa91b7ee741cb8
     </script>

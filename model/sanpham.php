@@ -11,12 +11,15 @@ function delete_sanpham($id) {
 
 function loadall_sanpham_home() {
     $sql = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC";
+<<<<<<< HEAD
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
 
 function loadall_sanpham_top10() {
     $sql = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC LIMIT 0,10";
+=======
+>>>>>>> 8fe40c639ea7b4308574a7fda0aa91b7ee741cb8
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
