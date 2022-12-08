@@ -22,11 +22,10 @@
         <div class="shop">
             <div class="list_sort">
                 <ul>
-                    
                 <?php
 				foreach ($dsdm as $dm) {
 					extract($dm);
-					$linkdm = "./index.php?act=shop&iddm=".$id;
+					$linkdm = "./index.php?act=sanpham&iddm=".$id;
 					echo '<li><a href="'.$linkdm.'">
 						'.$name.'
 					</a></li>';
@@ -38,11 +37,10 @@
                     
                 
                 <?php
-			foreach ($dssp as $sp) {
+			foreach ($spnew as $sp) {
 				extract($sp);
 				$linksp = "./index.php?act=sanphamct&idsp=".$id;
 				$img = $img_path.$img;
-                $formatPrice = number_format($price, 0,  ',', ',');
 				echo '<a href="'.$linksp.'"><div class="product_img">
                 <img src="'.$img.'" alt="">
             </div>
@@ -50,15 +48,10 @@
                 <h4>'.$name.'</h4>
             </div>
             <div class="product_price">
-                <span>'.$formatPrice.'<sup>đ</sup></span>
+                <span>'.$price.'<sup>đ</sup></span>
             </div></a>';
 			}
 			?>
-            <?php
-                                    if(isset($thongbao) && ($thongbao != "")) {
-                                        echo $thongbao;
-                                    }
-                                    ?>
             </div>
         </div>
     </main>

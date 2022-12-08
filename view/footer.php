@@ -46,6 +46,7 @@
     </footer>
     <!-- Slick -->
     <!-- <script src="./JS/app.js"></script> -->
+    <script src="./JS/validation.js"></script>
 </body>
 
 </html>

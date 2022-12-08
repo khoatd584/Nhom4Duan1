@@ -104,7 +104,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=listkh" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=dskh" aria-expanded="false">
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 <span class="hide-menu">Customers</span>
                             </a>

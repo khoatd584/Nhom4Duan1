@@ -10,7 +10,13 @@ function delete_sanpham($id) {
 }
 
 function loadall_sanpham_home() {
-    $sql = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC LIMIT 0,16";
+    $sql = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC";
+    $listsanpham = pdo_query($sql);
+    return $listsanpham;
+}
+
+function loadall_sanpham_top10() {
+    $sql = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC LIMIT 0,10";
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }

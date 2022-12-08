@@ -9841,7 +9841,7 @@ Main sidebar
 ******************/
 .left-sidebar {
   position: absolute;
-  width: 250px;
+  width: 240px;
   height: 100%;
   top: 0px;
   z-index: 10;

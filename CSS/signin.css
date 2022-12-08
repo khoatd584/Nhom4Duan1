@@ -61,9 +61,6 @@ button {
     color: #111111;
 }
 
-.account a:hover {
-    color: white;
-}
 
 header {
     margin: 0 auto;
@@ -152,10 +149,10 @@ h2 {
 }
 
 .search {
-    font-size: 1.5rem;
-    color: #111111;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
 }
 
 a ion-icon {
