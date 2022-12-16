@@ -1,8 +1,8 @@
 
 <main>
-    <div class="view_nike">
+    <!-- <div class="view_nike">
         <img src="../IMG/logo.png" alt="">
-    </div>
+    </div> -->
     <div class="title">
         <h3>YOUR ACCOUNT FOR EVERYTHING NIKE</h3>
     </div>
@@ -53,7 +53,7 @@
     text-align: center
 }
 
-form {
+.signin form {
     color: #8d8d8d;
     font-size: 14px;
     display: flex;
@@ -62,7 +62,7 @@ form {
     flex-direction: column;
 }
 
-input {
+.form-group input {
     background-color: #ffffff;
     border-color: #e5e5e5;
     border-radius: 3px;

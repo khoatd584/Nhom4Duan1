@@ -3,55 +3,22 @@
         <div class="cart_left">
             <h2>Bag</h2>
             <?php
-            $tong = 0;
-            foreach ($_SESSION['mycart'] as $cart) {
-                $hinh = $img_path.$cart[2];
-                $ttien = $cart[3] * $cart[5];
-                $tong += $ttien;
-                $formatPrice = number_format($cart[3], 0,  ',', ',');
-                echo ' <div class="infor_product_cart">
-                <div class="img">
-                    <img src="'.$cart[2].'" alt="">
-                </div>
-                <div class="infor">
-                    <h3>'.$cart[1].'</h3>
-                    <p>'.$cart[4].'</p>
-
-                </div>
-                <div class="price">
-                    <span>'.$formatPrice.'<sup>đ</sup></span>
-                    <a href="">
-                        <ion-icon name="trash-outline"></ion-icon>
-                    </a>
-                    <div class="quanlity">
-                        <p>Quanlity: <span>'.$cart[5].'</span></p>
+            viewcart();
+        ?>
+                <div class="pay">
+                <?php
+                if (isset($_SESSION['user'])) {
+                ?>
+                    <a href="./index.php?act=bill"><input class="pay_btn" type="button" value="PAY AWAY"></a>
+                <?php
+                } else {
+                ?>
+                    <a href="./index.php?act=dangnhap"><input class="pay_btn" type="button" value="PAY AWAY"></a>
+                <?php
+                }
+                ?>
                     </div>
                 </div>
-            </div>';
-            }
-            echo '
-        </div>
-        <div class="cart_right">
-            <h2>Summary</h2>
-            <div class="total">
-                <div class="row1">
-                    <span>Subtotal</span>
-                    <p>$ 999</p>
-                </div>
-                <div class="row1 space">
-                    <span>Estimated Delivery & Handling</span>
-                    <p>Free</p>
-                </div>
-                <div class="row1 space">
-                    <span>Total</span>
-                    <p>'.$tong.'</p>
-                </div>
-                <div class="pay">
-                    <button class="pay_btn" type="submit">PAY AWAY</button>
-                </div>
-            </div>
-        </div>';
-    ?>
     </main>
     <style>
         main {

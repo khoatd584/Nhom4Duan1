@@ -1,9 +1,9 @@
 
 
 <main>
-    <div class="view_nike">
+    <!-- <div class="view_nike">
         <img src="./IMG/logo.png" alt="">
-    </div>
+    </div> -->
     <div class="title">
         <h3>BECOME A NIKE MEMBER</h3>
         <p>Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</p>
@@ -79,7 +79,7 @@
     text-align: center
 }
 
-form {
+.signup form {
     color: #8d8d8d;
     font-size: 14px;
     display: flex;
@@ -88,7 +88,7 @@ form {
     flex-direction: column;
 }
 
-input {
+.form-group input {
     background-color: #ffffff;
     border-color: #e5e5e5;
     border-radius: 3px;

@@ -18,33 +18,33 @@
 </head>
 
 <body>
-   
-    <?php
-					if(isset($_SESSION['user'])) {
-						extract($_SESSION['user']);
-						?>
-    <div class="account">
-        <a href="#">Help</a>
-        <a href="#">Hi, <?=$user?></a>
-        <a href="#">Icon</a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item-active" href="">Account</a>
-            <?php if($role == 1) {?>
-            <a class="dropdown-item" href="./Admin/index.php">Admin</a>
-            <?php } ?>
-            <a class="dropdown-item" href="">Order</a>
-            <a class="dropdown-item" href="./index.php?act=thoat">Log Out</a>
-        </div>
-    </div>
-    <?php
-					} else {
 
-					?>
-                      <div class="account">
-        <a href="#">Help</a>
-        <a href="./index.php?act=dangky">Join Us</a>
-        <a href="./index.php?act=dangnhap">Sign In</a>
-    </div>
+    <?php
+    if (isset($_SESSION['user'])) {
+        extract($_SESSION['user']);
+    ?>
+        <div class="account">
+            <a href="#">Help</a>
+            <a href="#">Hi, <?= $user ?></a>
+            <a href="#"><ion-icon style="font-size: 17px;" name="person-outline"></ion-icon></a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item-active" href="">Account</a>
+                <?php if ($role == 1) { ?>
+                    <a class="dropdown-item" href="./Admin/index.php">Admin</a>
+                <?php } ?>
+                <a class="dropdown-item" href="./index.php?act=mybill">Order</a>
+                <a class="dropdown-item" href="./index.php?act=thoat">Log Out</a>
+            </div>
+        </div>
+    <?php
+    } else {
+
+    ?>
+        <div class="account">
+            <a href="#">Help</a>
+            <a href="./index.php?act=dangky">Join Us</a>
+            <a href="./index.php?act=dangnhap">Sign In</a>
+        </div>
     <?php } ?>
     <header>
         <div class="logo">
@@ -293,7 +293,7 @@
 
 
             <div class="">
-                <a href="./cart.html">
+                <a href="./index.php?act=viewcart">
                     <ion-icon name="bag-outline"></ion-icon>
                 </a>
             </div>

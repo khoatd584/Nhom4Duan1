@@ -14,6 +14,14 @@
         border-radius: 4px;
         cursor: pointer;
     }
+    .hand{
+        background-color: #54c45e;
+        color: white;
+        padding: 10px 15px !important;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 </style>
 <div class="container-fluid">
     <div class="btn">
@@ -51,7 +59,10 @@
                                                 <td>' . $name . '</td>
                                                 <td>' . $price . '</td>
                                                 <td>' . $hinh . '</td>
-                                                <td><a href="' . $suasp . '"><input type="button" value="Sửa"></a> <a href="' . $xoasp . '"><input type="button" value="Xóa"></a></td>
+                                                <td>
+                                                    <a class="hand" href="' . $suasp . '"><input type="button" value="Edit"></a> 
+                                                    <a class="hand" href="' . $xoasp . '"><input type="button" value="Delete"></a>
+                                                </td>
                                             </tr>';
                                     }
                                     ?>

@@ -7,11 +7,13 @@
         width: 15%;
         background-color: #54c45e;
         color: white;
-        padding: 10px;
+        padding: 10px 15px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
     }
+    
+   
 </style>
 <div class="page-wrapper">
             <div class="btn">

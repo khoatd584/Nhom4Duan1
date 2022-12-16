@@ -104,6 +104,12 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=listbill" aria-expanded="false">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                <span class="hide-menu">Orders</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./index.php?act=dskh" aria-expanded="false">
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 <span class="hide-menu">Customers</span>

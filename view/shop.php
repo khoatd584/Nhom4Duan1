@@ -54,11 +54,11 @@
             </div></a>';
 			}
 			?>
-            <?php
-                                    if(isset($thongbao) && ($thongbao != "")) {
-                                        echo $thongbao;
-                                    }
-                                    ?>
             </div>
         </div>
     </main>
+    <style>
+        a {
+            color: #111;
+        }
+    </style>

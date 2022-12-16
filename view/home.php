@@ -36,7 +36,7 @@
 				$linksp = "./index.php?act=sanphamct&idsp=".$id;
 				$img = $img_path.$img;
                 $formatPrice = number_format($price, 0,  ',', ',');
-                echo '
+                echo '<a href="'.$linksp.'">
             <div class="product">
                 <div class="product_img">
                     <img src="'.$img.'" alt="">
@@ -47,7 +47,7 @@
                 <div class="product_price">
                     <span>'.$formatPrice.'<sup>đ</sup></span>
                 </div>
-            </div>';
+            </div></a>';
         }
         ?>
         </section>
@@ -122,3 +122,8 @@ $(document).ready(function() {
 });
 // End Slider
     </script>
+    <style>
+        a {
+            color: #111;
+        }
+    </style>
